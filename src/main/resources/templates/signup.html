@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>sign up</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}">
+	</head>
+	<body>
+		<h2>Sign up</h2>
+    <form method="post" th:action="@{/register}">
+      <label for="username">Username</label>
+      <input type="text" name="username"/> <br/>
+      <label for="password">Password</label>
+      <input type="password" name="password"/> <br/>
+      <label for="first_name">First name</label>
+      <input type="text" name="firstName"/> <br/>
+      <label for="last_name">Last name</label>
+      <input type="text" name="lastName"/> <br/>
+      <label for="email">E-mail</label>
+      <input type="email" name="email"/> <br/>
+      <button type="submit">Submit</button>
+    </form>
+    <script th:src="@{/js/script.js}"></script>
+	</body>
+
+</html>

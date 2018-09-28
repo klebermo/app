@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>title</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+	<body>
+		<h2>Hello World</h2>
+    <h3 sec:authorize="isAnonymous()"> <a th:href="@{/signin}">Sign in</a> | <a th:href="@{/signup}">Sign up</a> </h3>
+    <h3 sec:authorize="isAuthenticated()"> <a sec:authorize="hasRole('ADMIN')" th:href="@{/admin}">Admin</a> | <a th:href="@{/logout}">Log out</a> </h3>
+    <script th:src="@{/js/script.js}"></script>
+	</body>
+</html>

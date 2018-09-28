@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>sign in</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}">
+	</head>
+	<body>
+		<h2>Sign in</h2>
+    <form method="post" th:action="@{/login}">
+      <label for="login">Username</label>
+      <input type="text" name="login"/> <br/>
+      <label for="senha">Password</label>
+      <input type="password" name="senha"/> <br/>
+      <button type="submit">Submit</button>
+    </form>
+    <script th:src="@{/js/script.js}"></script>
+	</body>
+
+</html>

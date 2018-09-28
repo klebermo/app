@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>error</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+	<body>
+		<h2> <span th:text="${status}"></span> <span th:text="${error}"></span> </h2>
+    <h3 th:text="${message}"></h3>
+    <div class="stacktrace" th:text="${trace}"></div>
+		<h4 th:text="${timestamp}"></h4>
+    <script th:src="@{/js/script.js}"></script>
+	</body>
+</html>
